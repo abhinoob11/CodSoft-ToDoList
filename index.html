@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>To-Do List By Abhinav</title>
+</head>
+<body onload="time()">
+    <div class="todo-container">
+          <!-- All HTML elements placed here -->
+          <div class="date-hour">
+            <p id="date"></p>
+            <p id="hour"></p>
+         </div>
+         <header>
+            <h1>To Do List</h1>
+         </header>
+         <form action="" id="todo-form">
+            <p>Add Your Task Here</p>
+            <div class="form-control">
+               <input type="text" id="todo-input" placeholder="Type here about your next task">
+               <button type="submit">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+                </button>
+            </div>
+         </form>
+         <form action="" id="edit-form" class="hide">
+            <p>Edit Your Task</p>
+            <div class="form-control">
+                <input type="text" id="edit-input" placeholder="Type here about your next task">
+                <button type="submit">
+                    <i class='fa fa-check'></i>
+
+                </button>
+            </div>
+            
+            <button type="button" id="cancel-edit-btn">Cancel</button>
+        </form>
+        <div class="todo-list" id="todo-list">
+            <div class="todo">
+                <h3>Abhinav's First Task</h3>
+                <button class="finish-todo">
+                    <i class="fa fa-check-square" aria-hidden="true"></i>
+                </button>
+                <button class="edit-todo">
+                    <i class="fa fa-pencil"></i>
+                </button>
+                <button class="remove-todo">
+                    <i class="fa fa-trash"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+ </body>
+    
+</html>
